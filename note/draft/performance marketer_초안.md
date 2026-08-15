@@ -67,6 +67,35 @@ knowledge,reference,research의 상관관계.
 다른 접근법으로 이 부분을 구체화 나가는건 어떨까?
 대화 필요. 
 
+##내부 요청 작동 분기와 분기별 작업 깊이
+                  User Request
+                       │
+                작업 복잡도 판단
+                       │
+          ┌────────────┼────────────┐
+          ↓            ↓            ↓
+        QUICK        STANDARD       DEEP
+          │            │            │
+      한방 생성     핵심 Knowledge   Reference
+                       +           + Knowledge
+                    Reference      + Research
+                       │           + Persona
+                       │           + Strategy
+          └────────────┼────────────┘
+                       ↓
+                     Output
+
+"한방! 원샷이 좋을 수도 있잖아?!"
+이 문제에 어느 정도의 사고 환경이 필요한지부터 판단한다
+###작업 깊이
+모든 요청에 동일한 워크플로우를 적용하지 않는다. 
+요청의 복잡도와 필요한 판단 수준에 따라 QUICK / STANDARD / DEEP으로 작업 깊이를 조절한다. 
+단순 카피는 최소한의 맥락으로 빠르게 생성하고, 일반적인 마케팅 업무는 핵심 Knowledge와 Reference를 활용한다. 
+충분한 분석과 전략이 필요한 작업은 Reference·Knowledge·Research·Persona·Strategy까지 확장한다. 
+복잡한 구조를 사용하는 것 자체가 목적이 아니라, 좋은 결과에 필요한 만큼만 사고한다.
+
+///
+
 ## ※서브 지식 자산※
 ###문장구조로 보는 카피라이팅 공식
 추후, 하나씩 만들어감.
