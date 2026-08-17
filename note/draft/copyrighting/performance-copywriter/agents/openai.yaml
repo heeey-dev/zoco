@@ -1,0 +1,7 @@
+interface:
+  display_name: "Performance Copywriter"
+  short_description: "상품 맥락을 원샷 전략과 마케팅 콘텐츠로 변환"
+  default_prompt: "Use $performance-copywriter to analyze my product, company, or service and prepare a marketing-content export."
+
+policy:
+  allow_implicit_invocation: true
