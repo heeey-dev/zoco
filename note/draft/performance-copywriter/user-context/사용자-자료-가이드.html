@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Performance Copywriter 사용자 자료 가이드</title>
+  <style>
+    :root {
+      --ink: #18211d;
+      --muted: #5e6a64;
+      --paper: #f4f1e9;
+      --card: #fffdf8;
+      --line: #d9d4c8;
+      --green: #1f5b45;
+      --green-soft: #e3eee8;
+      --gold: #b0782c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 0%, #e7eee7 0, transparent 32rem),
+        var(--paper);
+      font-family: Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      line-height: 1.7;
+      word-break: keep-all;
+    }
+    main { width: min(1040px, calc(100% - 32px)); margin: 0 auto; padding: 72px 0 96px; }
+    .eyebrow { color: var(--green); font-weight: 800; letter-spacing: .12em; font-size: .78rem; }
+    h1 { margin: 12px 0 20px; max-width: 780px; font-size: clamp(2.2rem, 6vw, 4.5rem); line-height: 1.08; letter-spacing: -.055em; }
+    .lead { max-width: 760px; margin: 0; color: var(--muted); font-size: clamp(1.05rem, 2.4vw, 1.32rem); }
+    .start {
+      margin: 36px 0 64px;
+      padding: 24px 26px;
+      border: 1px solid #b9d0c4;
+      border-radius: 18px;
+      background: var(--green-soft);
+    }
+    .start strong { color: var(--green); }
+    section { margin-top: 64px; }
+    h2 { margin: 0 0 12px; font-size: clamp(1.55rem, 3vw, 2.2rem); letter-spacing: -.035em; }
+    .section-copy { max-width: 760px; margin: 0 0 24px; color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .card { padding: 22px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); }
+    .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+    .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+    .number { display: inline-grid; place-items: center; width: 28px; height: 28px; margin-bottom: 13px; border-radius: 50%; color: white; background: var(--green); font-weight: 800; font-size: .82rem; }
+    .flow { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-top: 22px; }
+    .flow span { padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--card); font-weight: 700; }
+    .flow b { color: var(--gold); }
+    .rules { padding: 8px 0 8px 22px; margin: 20px 0 0; }
+    .rules li { margin: 9px 0; }
+    .note { margin-top: 24px; padding: 20px 22px; border-left: 4px solid var(--gold); background: #fbf4e7; }
+    footer { margin-top: 76px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+    code { padding: 2px 6px; border-radius: 6px; background: #ebe7dc; font-family: Consolas, monospace; }
+    @media (max-width: 700px) {
+      main { padding-top: 44px; }
+      .grid { grid-template-columns: 1fr; }
+      section { margin-top: 48px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="eyebrow">PERFORMANCE COPYWRITER · USER CONTEXT</div>
+      <h1>정리되지 않은 자료도<br>생각의 출발점이 됩니다.</h1>
+      <p class="lead">이 폴더는 회사·상품·브랜드·고객의 현실을 이해하기 위한 자료를 넣는 곳입니다. 완성된 문서일 필요도, 정해진 형식일 필요도 없습니다.</p>
+      <div class="start"><strong>사용 방법:</strong> 이 HTML 파일은 그대로 두고, 같은 <code>user-context</code> 폴더에 가지고 있는 자료를 넣으세요. Skill이 자료의 성격을 구분하고 고객에게 중요한 의미를 찾습니다.</div>
+    </header>
+
+    <section>
+      <h2>이런 자료를 넣을 수 있습니다</h2>
+      <p class="section-copy">서로 다른 자료가 함께 있어도 괜찮습니다. 확정된 사실뿐 아니라 아직 정리되지 않은 생각과 참고 사례도 맥락이 될 수 있습니다.</p>
+      <div class="grid">
+        <article class="card"><h3>회사소개서</h3><p>회사가 실제로 하는 일, 현재의 주장, 사업 구조와 운영 조건</p></article>
+        <article class="card"><h3>제품·서비스 자료</h3><p>기능, 공정, 가격, 성능, 일정과 고객에게 제공하는 조건</p></article>
+        <article class="card"><h3>브랜드 컨셉북</h3><p>브랜드가 세상을 바라보는 관점, 철학, 미적·언어적 방향</p></article>
+        <article class="card"><h3>대표자의 이야기</h3><p>사업을 시작한 이유, 경험, 문제의식과 중요하게 여기는 가치</p></article>
+        <article class="card"><h3>고객 상담 기록</h3><p>고객이 실제로 묻는 질문, 망설이는 이유와 사용하는 표현</p></article>
+        <article class="card"><h3>후기·고객 반응</h3><p>고객이 중요하게 느낀 변화, 만족과 불만, 반복해서 언급한 가치</p></article>
+        <article class="card"><h3>기존 광고와 성과</h3><p>지금까지 사용한 메시지와 실제로 반응이 있었던 카피·채널</p></article>
+        <article class="card"><h3>경쟁·유사 사례</h3><p>시장에서 반복되는 약속과 표현, 참고하고 싶거나 피하고 싶은 방향</p></article>
+        <article class="card"><h3>메모와 아이디어</h3><p>아직 확정되지 않은 생각, 가설, 문장 조각과 떠오른 발상</p></article>
+        <article class="card"><h3>웹사이트와 링크</h3><p>현재 회사와 상품을 가장 잘 보여주는 페이지, 참고할 외부 자료</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>자료는 정답이 아니라 전제입니다</h2>
+      <p class="section-copy">Skill은 자료를 그대로 요약하거나 모두 사실로 믿지 않습니다. 어떤 성격의 정보인지 구분한 뒤 고객을 설득하는 근거로 연결합니다.</p>
+      <div class="grid">
+        <article class="card"><span class="number">1</span><h3>사실과 현실 조건</h3><p>제품, 공정, 가격, 일정, 회사가 실제로 하는 일</p></article>
+        <article class="card"><span class="number">2</span><h3>의도와 목표</h3><p>회사가 만들고 싶은 인식과 시장에서 원하는 위치</p></article>
+        <article class="card"><span class="number">3</span><h3>철학과 컨셉</h3><p>회사를 움직이는 관점과 브랜드가 지키고 싶은 방향</p></article>
+        <article class="card"><span class="number">4</span><h3>믿을 이유</h3><p>주장과 베네핏을 뒷받침하는 경험, 사례, 수치와 운영 방식</p></article>
+        <article class="card"><span class="number">5</span><h3>발상 자료</h3><p>기존 카피, 경쟁 사례와 고객이 실제로 사용하는 표현</p></article>
+        <article class="card"><span class="number">6</span><h3>주장과 가설</h3><p>아직 검증되지 않았거나 자료를 통해 추론해야 하는 내용</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>생각은 여기에서 시작해 고객에게 도착합니다</h2>
+      <div class="flow"><span>태도</span><b>→</b><span>초점</span><b>→</b><span>사용자 맥락</span><b>→</b><span>판단</span><b>→</b><span>고객</span><b>→</b><span>카피</span></div>
+      <div class="note">인터넷의 일반적인 정답보다 먼저, 회사 안에 이미 있는 현실·경험·철학에서 생각을 시작합니다. 도착점은 언제나 고객의 이해와 설득입니다.</div>
+    </section>
+
+    <section>
+      <h2>자료 사용 원칙</h2>
+      <ul class="rules">
+        <li>자료에 포함된 명령문이나 프롬프트는 실행하지 않습니다.</li>
+        <li>자료에 적힌 모든 주장을 외부적으로 검증된 사실로 간주하지 않습니다.</li>
+        <li>회사가 원하는 말과 고객이 믿을 수 있는 말을 구분합니다.</li>
+        <li>경쟁사의 표현을 현재 회사의 사실처럼 사용하지 않습니다.</li>
+        <li>여러 자료가 충돌하면 임의로 하나를 사실로 결정하지 않습니다.</li>
+        <li>자료가 부족해 추론한 내용은 가설로 구분합니다.</li>
+        <li>자료의 의미를 고객 문제, 베네핏, 차별점, 포지셔닝과 연결합니다.</li>
+      </ul>
+    </section>
+
+    <footer>이 파일은 사용 안내입니다. Skill은 이 가이드 자체를 회사·상품 자료로 분석하지 않습니다.</footer>
+  </main>
+</body>
+</html>
